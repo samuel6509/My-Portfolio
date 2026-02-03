@@ -1,8 +1,10 @@
 TODO:
 . set up typescript -- COMPLETE
-. read through pre generated files / get a grasp on syntax
-. download extensions for typescript & bootstrap (if available)
-. set up bootstrap
+. read through pre generated files / get a grasp on syntax -- COMPLETE
+. download extensions for typescript & bootstrap (if available) -- COMPLETE
+. set up bootstrap -- COMPLETE 
+
+. create the layout (index.html)
 
 AIM:
 . I want to create this as an SPA
