@@ -1,4 +1,28 @@
-.image-of-me
+/* background colour */
+body
 {
-    margin-left: -60px;
+    background-color: lightblue !important; 
+}
+
+/* sidebar styling */
+.my-sidebar
+{
+    width: 250px;
+    transition: all 1s ease;
+}
+.my-sidebar.collapsed
+{
+    width: 0px;
+    padding: 0px !important;
+}
+.my-sidebar.collapsed .image-text,
+.my-sidebar.collapsed .image-of-me,
+.my-sidebar.collapsed ul
+{
+    display: none;
+}
+.my-sidebar.collapsed .image-of-me
+{
+    width: 0px;
+    height: 0px;
 }

@@ -4,31 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My-Portfolio</title>
+    <!-- index css file -->
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
     <!-- nav bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+     <nav class="navbar navbar-dark bg-dark flex-column align-items-center vh-100 my-sidebar justify-content-start p-3">
+     <!-- nav bar toggle button -->
+     <button id="sidebarToggle" class="btn btn-dark bg-dark mb-3">☰ Menu</button>
+        <a class="navbar-brand d-flex flex-column align-items-center mb-3">
           <!-- my image -->
-          <img src="/me.jpg" alt="Sam" class="rounded-circle me-3 image-of-me" width="200" height="200">
+          <img src="/me.jpg" alt="Sam" class="rounded-circle mb-4 image-of-me" width="200" height="200">
           <!-- text next to image -->
-          My Portfolio
+          <span class="image-text">My Portfolio</span>
         </a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><button id="nav-#" class="nav-link btn btn-link">#cadsfdgnsdasafsgdnffed</button></li>
-            <li class="nav-item"><button id="nav-#" class="nav-link btn btn-link">#cadsfdgnsdasafsgdnffed</button></li>
-            <li class="nav-item"><button id="nav-#" class="nav-link btn btn-link">#cadsfdgnsdasafsgdnffed</button></li>
-            <li class="nav-item"><button id="nav-#" class="nav-link btn btn-link">#cadsfdgnsdasafsgdnffed</button></li>
-            <li class="nav-item"><button id="nav-#" class="nav-link btn btn-link">#cadsfdgnsdasafsgdnffed</button></li>
-          </ul>
-        </div>
-      </div>
+        <ul class="navbar-nav w-100 text-center">
+          <li class="nav-item mb-3">
+            <button class="nav-link btn btn-link w-100 text-center">placeholder</button>
+          </li>
+          <li class="nav-item mb-3">
+            <button class="nav-link btn btn-link w-100 text-center">placeholder</button>
+          </li>
+          <li class="nav-item mb-3">
+            <button class="nav-link btn btn-link w-100 text-center">placeholder</button>
+          </li>
+          <li class="nav-item mb-3">
+            <button class="nav-link btn btn-link w-100 text-center">placeholder</button>
+          </li>
+          <li class="nav-item mb-3">
+            <button class="nav-link btn btn-link w-100 text-center">placeholder</button>
+          </li>
+        </ul>
      </nav>
-
     <div id="app"></div>
+    <!-- index script file -->
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
