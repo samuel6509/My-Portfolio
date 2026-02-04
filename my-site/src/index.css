@@ -6,10 +6,19 @@ body
 }
 
 /* sidebar styling */
+.sidebar-toggle
+{
+    position: fixed;
+}
 .image-of-me
 {
+    margin-top: 50px;
     width: 175px;
     height: 175px;
+}
+.my-sidebar.collapsed .sidebar-toggle-text 
+{
+    display: none;
 }
 .my-sidebar
 {
