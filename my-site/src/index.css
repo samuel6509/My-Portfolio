@@ -21,16 +21,21 @@ body
     width: 0px;
     padding: 0px !important;
 }
-.my-sidebar.collapsed .image-text,
-.my-sidebar.collapsed .image-of-me,
-.my-sidebar.collapsed ul
+.my-sidebar ul,
+.my-sidebar .image-text,
+.my-sidebar .image-of-me 
 {
-    display: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+    transition-delay: 0.4s; 
 }
-.my-sidebar.collapsed .image-of-me
+.my-sidebar.collapsed ul,
+.my-sidebar.collapsed .image-text,
+.my-sidebar.collapsed .image-of-me 
 {
-    width: 0px;
-    height: 0px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* bottom footer styling */

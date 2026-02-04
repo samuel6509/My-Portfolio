@@ -7,9 +7,9 @@ TODO:
 . create the layout (index.html) -- IN PROGRESS
     . Create side bar -- COMPLETE
     . create bottom footer -- IN PROGRESS
-    . change left div to middle div for bottom footer
-    . change github linked in to image icons
-    . make a new left div in bottom footer & put something there
+    . change left div to middle div for bottom footer --COMPLETE
+    . change github linked in to image icons -- COMPLETE
+    . make a new left div in bottom footer & put something there -- IN PROGRESS
 
 AIM:
 . I want to create this as an SPA
