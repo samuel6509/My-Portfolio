@@ -4,7 +4,9 @@ TODO:
 . download extensions for typescript & bootstrap (if available) -- COMPLETE
 . set up bootstrap -- COMPLETE 
 
-. create the layout (index.html)
+. create the layout (index.html) -- IN PROGRESS
+    . Create side bar -- COMPLETE
+    . create bottom footer -- COMPLETE
 
 AIM:
 . I want to create this as an SPA

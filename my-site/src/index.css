@@ -2,6 +2,7 @@
 body
 {
     background-color: lightblue !important; 
+    padding-bottom: 60px;
 }
 
 /* sidebar styling */
@@ -25,4 +26,23 @@ body
 {
     width: 0px;
     height: 0px;
+}
+
+/* bottom footer styling */
+.my-footer
+{
+}
+.footer-contact
+{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}.my-footer a
+{
+    color: white;
+    text-decoration: none;
+}
+.my-footer a:hover
+{
+    text-decoration: underline;
 }
