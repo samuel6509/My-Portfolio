@@ -8,7 +8,7 @@ body
 /* sidebar styling */
 .sidebar-toggle
 {
-    position: fixed;
+    position:absolute;
 }
 .image-of-me
 {
@@ -45,6 +45,50 @@ body
 {
     opacity: 0;
     visibility: hidden;
+}
+
+/* sidebar dropdown styling */
+.has-children 
+{
+    position: relative;
+}
+.submenu 
+{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+.has-children:hover .submenu 
+{
+    max-height: 300px; 
+    opacity: 1;
+}
+.submenu-item 
+{
+    display: block;
+    padding: 8px 12px;
+    margin: 4px 12px;        
+    border-radius: 8px;       
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.submenu-item:hover 
+{
+    color: white;
+}
+.nav-link:active,
+.nav-link:focus,
+.submenu-item:active,
+.submenu-item:focus 
+{
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 /* bottom footer styling */
