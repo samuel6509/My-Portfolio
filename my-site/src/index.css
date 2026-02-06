@@ -1,19 +1,23 @@
-/* background colour */
+html, body 
+{
+    height: 100%;
+}
 body
 {
     background-color: lightblue !important; 
-    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* app div placement */
 /* CONTENT MOUNT  */
 #app 
 {
-  text-align: center;
-  padding: 40px;
-  padding-bottom: 120px;
-  margin-left: 250px;
-  transition: margin-right 1s ease;
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    transition: margin-right 1s ease;
 }
 .my-sidebar.collapsed ~ #app
 {
@@ -112,13 +116,7 @@ body
 .my-footer
 {
     padding: 25px 0px;
-}
-.footer-container
-{
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: relative !important;
 }
 .footer-middle
 {
@@ -150,8 +148,8 @@ body
 /* github & linkedin logo */
 .social-link 
 {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
