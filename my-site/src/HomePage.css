@@ -19,6 +19,12 @@ p
     font-family:Helvetica ;
     white-space: pre-line;
 }
+.project-icons
+{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
 .project-icons img
 {
     width: 150px;
