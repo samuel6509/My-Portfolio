@@ -1,3 +1,9 @@
+// bootstrap imports
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+import "./HomePage.ts"; // HomePage.ts file
+
 // side bar close & open logic
 const buttonToggle = document.getElementById("sidebarToggle");
 const sidebar = document.querySelector(".my-sidebar");
@@ -5,10 +11,3 @@ const sidebar = document.querySelector(".my-sidebar");
 buttonToggle?.addEventListener("click", () => {
     sidebar?.classList.toggle("collapsed");
 });
-
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <h3>Welcome!</h3>
-    <p>testing to see if I can figure it out</p>
-  </div>
-`

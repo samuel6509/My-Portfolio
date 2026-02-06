@@ -1,3 +1,10 @@
+/* background colour */
+body
+{
+    background-color: lightblue !important; 
+    padding-bottom: 60px;
+}
+
 /* app div placement */
 /* CONTENT MOUNT  */
 #app 
@@ -12,13 +19,6 @@
 {
     margin-right: 250px;
     transition: margin-right 1s ease; 
-}
-
-/* background colour */
-body
-{
-    background-color: lightblue !important; 
-    padding-bottom: 60px;
 }
 
 /* sidebar styling */
