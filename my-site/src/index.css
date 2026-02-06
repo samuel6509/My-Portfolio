@@ -1,3 +1,19 @@
+/* app div placement */
+/* CONTENT MOUNT  */
+#app 
+{
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 120px;
+  margin-left: 250px;
+  transition: margin-right 1s ease;
+}
+.my-sidebar.collapsed ~ #app
+{
+    margin-right: 250px;
+    transition: margin-right 1s ease; 
+}
+
 /* background colour */
 body
 {
@@ -22,6 +38,7 @@ body
 }
 .my-sidebar
 {
+    position:fixed !important;
     width: 250px;
     transition: all 1s ease;
 }
@@ -146,7 +163,7 @@ body
 .social-link:hover 
 {
     transform: scale(1.1);
-    background: lightgray;
+    background: rgb(119, 71, 71);
 }
 .footer-icons
 {

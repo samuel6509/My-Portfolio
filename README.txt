@@ -10,7 +10,9 @@ TODO:
     . change left div to middle div for bottom footer --COMPLETE
     . change github linked in to image icons -- COMPLETE
     . make a new left div in bottom footer & put something there -- IN PROGRESS
-    . add hover effect over the options in sidebar -- IN PROGRESS
+    . add hover effect over the options in sidebar -- COMPLETE
+
+. add index page content -- IN PROGRESS
 
 AIM:
 . I want to create this as an SPA
