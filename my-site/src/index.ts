@@ -2,12 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
 
-import {showHome} from "./HomePage.ts"; // HomePage.ts file
-
-// homepage the default page
-window.addEventListener("DOMContentLoaded", () => {
-    showHome();
-});
+import { router } from "./Router";
 
 // side bar close & open logic
 const buttonToggle = document.getElementById("sidebarToggle");
@@ -17,5 +12,6 @@ buttonToggle?.addEventListener("click", () => {
     sidebar?.classList.toggle("collapsed");
 });
 
-// routing for my web pages
-document.getElementById("home-page")?.addEventListener("click", showHome);
+// getting route for page
+window.addEventListener("load", router);
+window.addEventListener("hashchange", router);
