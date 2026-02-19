@@ -15,6 +15,11 @@ export function showTest()
   <button id="reverse_execute" >press to reverse</button>
   <input type="input" id="reverse_param" value="Hello World!"></input>
   <p id="reverse_answer" ></p>
+
+  <button id="twosum_execute" >press for twosum</button>
+  <input type="input" id="twosum_param1" value="1, 2, 3, 4, 5"></input>
+  <input type="input" id="twosum_param2" value="4"></input>
+  <p id="twosum_answer" ></p>
   `;
 
     // trigger logic for fibonacci
