@@ -89,3 +89,17 @@ function reverse(input:string)
     console.log(answer);
     return answer;
 }
+
+// twosum function
+function twosum(param1:number[], param2:number)
+{
+    let target:number = 0;
+    let nums:{[key:number]:number} = {} // KEY num VAL index
+    for(let i:number = 0; i < param1.length; i++)
+    {
+        target = param2 - param1[i];
+        if(target in nums) return [nums[target], i];
+        if(!(param1[i] in nums)) nums[param1[i]] = i;
+    }
+    return [] // no answer
+}
