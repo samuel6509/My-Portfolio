@@ -11,6 +11,10 @@ export function showTest()
   <button id="fizzbuzz_execute" >press for fizzbuzz</button>
   <input type="number" id="fizzbuzz_param" min="0" max="50" value="10"></input>
   <p id="fizzbuzz_answer" ></p>
+
+  <button id="reverse_execute" >press to reverse</button>
+  <input type="input" id="reverse_param" value="Hello World!"></input>
+  <p id="reverse_answer" ></p>
   `;
 
     // trigger logic for fibonacci
@@ -31,6 +35,16 @@ export function showTest()
         const param = parseInt(fbParam.value) || 0;
         const answer = fizzBuzz(param);
         if(fbAnswer) fbAnswer.textContent = JSON.stringify(answer);
+    });
+
+    // trigger logic for reversing string
+    const reverseButton = document.getElementById("reverse_execute");
+    const reverseAnswer = document.getElementById("reverse_answer");
+    const reverseParam = document.getElementById("reverse_param") as HTMLInputElement;
+    reverseButton?.addEventListener("click", () => {
+        const param = reverseParam.value;
+        const answer = reverse(param);
+        if(reverseAnswer) reverseAnswer.textContent = JSON.stringify(answer);
     });
 }
 
@@ -60,6 +74,17 @@ function fizzBuzz(number:number)
         else if(i % 5 == 0) answer[i] = "Buzz";
         else answer[i] = "";
     }
+
+    console.log(answer);
+    return answer;
+}
+
+// reversing a string function
+function reverse(input:string)
+{
+    if(input.length == 0) return "";
+    let answer:string = "";
+    for(let i:number = input.length - 1; i >= 0; i--) answer += input[i];
 
     console.log(answer);
     return answer;
